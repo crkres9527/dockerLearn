@@ -4,7 +4,7 @@
 
 ## Docker Client 
 
-![architecture](/pic/dk_architecture.png)
+![architecture](/main/pic/dk_architecture.png)
 
 ## Docker Daemon
 
