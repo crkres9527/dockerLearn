@@ -33,3 +33,41 @@
 
   如果不同主机的数据包端口号相同，则一定发生端口转换
 
+## 安装
+
+- 安装工具包
+
+  ``` bash
+  sudo yum install yum-utils device-mapper-persistent-data lvm2
+  
+  ```
+
+  - yum-utils用于提供 yum-config-manager
+
+  - 安装device-mapper-persistent-data和lvm2,用于devicemapper存储驱动
+
+- 安装官方yum源
+
+  ```bash
+  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+  ```
+
+  使用yum-config-manager添加docker-ce的repository
+
+  
+
+- 安装docker-ce
+
+  ```bash
+  yum install docker-ce
+  ```
+
+- 运行docker
+
+  systemctl start docker
+
+- 查看运行状态
+
+  systemctl status docker.service
+
+  
